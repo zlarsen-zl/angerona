@@ -6,7 +6,7 @@ class UserPassword < ApplicationRecord
   belongs_to :user
   belongs_to :password
 
-  validates :role, presence: true, inclucsion: { in: ROLES}
+  validates :role, presence: true, inclusion: { in: ROLES }
   attribute :role, defualt: :viewer
 
   def editable?
